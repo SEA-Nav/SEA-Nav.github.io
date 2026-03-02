@@ -1,36 +1,13 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" 
-        content="SEA-Nav: Learning Quadruped Navigation in Cluttered Environments in One Hour">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <!-- <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/> -->
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <!-- <meta property="og:image" content="static/image/overview.pdf" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/> -->
-
-<!-- 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image"> -->
-  <!-- Keywords for your paper to be indexed by-->
+  <meta name="description" content="SEA-Nav: Efficient Policy Learning for Safe and Agile Quadruped Navigation in Cluttered Environments">
   <meta name="keywords" content="Reinforcement Learning, Robotics">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>SEA-Nav: Efficient Policy Learning for Safe and Agile Quadruped Navigation in Cluttered Environments</title>
 
-  <title>SEA-Nav: Learning Quadruped Navigation in Cluttered Environments in One Hour</title>
-  <!-- <link rel="icon" href="./static/images/robot.png" type="image/x-icon">
-  <link rel="shortcut icon" href="./static/images/robot.png" type="image/x-icon"> -->
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -40,20 +17,15 @@
     }
 
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <!-- <link rel="icon" type="image/x-icon" href="static/images/icon.png"> -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -64,418 +36,215 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
-  <!-- Shiyi Chen, Zeyu Wan, Shiyang Yan, Chun Zhang, Weiyi Zhang, 
-    Qiang Li, Debing Zhang, Fasih Ud Din Farrukh -->
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h2 class="title is-1 publication-title">SEA-Nav: Learning Quadruped Navigation in Cluttered Environments in One Hour</h2>
+            <h2 class="title is-1 publication-title">
+              SEA-Nav: Efficient Policy Learning for Safe and Agile Quadruped Navigation in Cluttered Environments
+            </h2>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">Anonymous Author(s)</span>
             </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Affiliation</span>
-                  </div>
-                  
-                  
-                  <div class="column has-text-centered">
-                    
-                    <div class="publication-links">
-                    <!-- PDF link -->
-                      <span class="link-block">
-                        <a href="./paper/rebuttal.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Rebuttal</span>
-                      </a>
-                    </span>
-
-                    <!-- <div class="publication-links"> -->
-                    <!-- PDF link -->
-                      <span class="link-block">
-                        <a href="./paper/corl2025.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://sea-nav.github.io/" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/2406.04835" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Affiliation</span>
+            </div>
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="./paper/corl2025.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
-              </span> -->
+              </span>
+              <span class="link-block">
+                <a href="https://sea-nav.github.io/" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop has-text-centered">
-    <video id="teaser" 
-           autoplay
-           controls
-           muted
-           preload
-           playsinline 
-           style="max-width: 100%; height: auto;"  <!-- 保持响应式 -->
-    >
-      <source src="./static/videos/main.mp4" type="video/mp4">
-    </video>
-  </div>
-  
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          Efficiently training quadruped robots for navigation in cluttered environments remains a major challenge. Prior methods either guarantee safety and agility only in simple layouts or suffer from poor scalability and excessive training time in complex scenarios. We propose SEA-Nav (Safe, Efficient, and Agile Navigation), a reinforcement learning framework for quadruped navigation that achieves strong real-world performance with minimal training cost. Our method combines a reward structure that encourages safe exploration, a goal-dwell termination mechanism that reinforces successful task completion, and action constraints that softly regulate velocity outputs for safety. With only one hour of training on a single RTX 4090 GPU, SEA-Nav enables zero-shot deployment to previously unseen static and dynamic obstacle settings. Extensive simulation and real-world experiments show that SEA-Nav achieves superior navigation success and agile locomotion across diverse environments.
-        </div>
-      </div>
+  <section class="hero teaser">
+    <div class="container is-max-desktop has-text-centered">
+      <video id="teaser" autoplay controls muted preload playsinline style="max-width: 100%; height: auto;">
+        <source src="./static/videos/main.mp4" type="video/mp4">
+      </video>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
 
-<section class="section">
-    <!-- Pipeline -->
-    <div class="columns is-centered has-text-centered">
-      <h3 class="title is-4">Framework Overview</h3>
-    </div>
-    <div class="content has-text-centered">
-      <img width="50%" src="./static/images/framework.png">
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-          <div style="max-width: 700px; margin: 0 auto;">
-            We present SEA-Nav, a reinforcement learning framework that enables safe, efficient, and agile quadruped navigation in cluttered environments. By integrating reward shaping for safe exploration, a goal-dwell termination strategy to enhance sample efficiency, and action constraints to promote stable locomotion, SEA-Nav can be trained within one hour on a single GPU and deployed zero-shot to unseen scenarios. 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            Efficiently training quadruped robots for navigation in cluttered environments remains a major challenge. Prior methods either guarantee safety and agility only in simple layouts or suffer from poor scalability and excessive training time in complex scenarios. We propose SEA-Nav (Safe, Efficient, and Agile Navigation), a reinforcement learning framework for quadruped navigation that achieves strong real-world performance with minimal training cost. Our method combines a reward structure that encourages safe exploration, a goal-dwell termination mechanism that reinforces successful task completion, and action constraints that softly regulate velocity outputs for safety. With only one hour of training on a single RTX 4090 GPU, SEA-Nav enables zero-shot deployment to previously unseen static and dynamic obstacle settings. Extensive simulation and real-world experiments show that SEA-Nav achieves superior navigation success and agile locomotion across diverse environments.
           </div>
         </div>
       </div>
     </div>
-    
+  </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h3 class="title is-4">Framework Overview</h3>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-    <!-- Pipeline -->
-    <div class="columns is-centered has-text-centered">
-      <h3 class="title is-4">One-take Demonstration</h3>
-    </div>
-    <div class="content has-text-centered">
-    <video id="hard" 
-           autoplay
-           controls
-           muted
-           preload
-           playsinline 
-           style="max-width: 30%; height: auto;"  
-    >
-      <source src="./static/videos/hard.mp4" type="video/mp4">
-    </video>
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-          <div style="max-width: 400px; margin: 0 auto;">
-          The robot completes dozens of consecutive hard-mode navigation trials in a cluttered room with <strong>no collisions</strong> and <strong>no video edits</strong>.
-
+      <div class="content has-text-centered">
+        <img width="50%" src="./static/images/framework.png" alt="SEA-Nav framework">
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified" style="max-width: 700px; margin: 0 auto;">
+            We present SEA-Nav, a reinforcement learning framework that enables safe, efficient, and agile quadruped navigation in cluttered environments. By integrating reward shaping for safe exploration, a goal-dwell termination strategy to enhance sample efficiency, and action constraints to promote stable locomotion, SEA-Nav can be trained within one hour on a single GPU and deployed zero-shot to unseen scenarios.
           </div>
         </div>
       </div>
     </div>
-    
+  </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h3 class="title is-4">One-take Demonstration</h3>
+        </div>
+      </div>
+      <div class="content has-text-centered">
+        <video id="hard" autoplay controls muted preload playsinline style="max-width: 30%; height: auto;">
+          <source src="./static/videos/hard.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified" style="max-width: 400px; margin: 0 auto;">
+            The robot completes dozens of consecutive hard-mode navigation trials in a cluttered room with <strong>no collisions</strong>.
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h3 class="title is-4">Experiment: Cluttered Room</h3>
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="abs" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/clutter/abs.mp4" type="video/mp4">
-          </video>
-          <a href="https://agile-but-safe.github.io/"><p>ABS</p> </a>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h3 class="title is-4">Experiment: Cluttered Room</h3>
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="clutter-fast" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/clutter/fast.mp4" type="video/mp4">
+            </video>
+            <p>SEA-Nav</p>
+          </div>
         </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="fast" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/clutter/fast.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-h</p>
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="clutter-mpc" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/clutter/mpc.mp4" type="video/mp4">
+            </video>
+            <p>SEA-Nav-b</p>
+          </div>
         </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="mpc" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/clutter/mpc.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-b</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="slow" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/clutter/slow.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-l</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h3 class="title is-4">Experiment: Dynamic Obstacle</h3>
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="abs" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dynamic/abs.mp4" type="video/mp4">
-          </video>
-          <a href="https://agile-but-safe.github.io/"><p>ABS</p> </a>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="fast" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dynamic/fast.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-h</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="mpc" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dynamic/mpc.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-b</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="slow" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dynamic/slow.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-l</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h3 class="title is-4">Experiment: Obstacle Course</h3>
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="abs" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/course/abs.mp4" type="video/mp4">
-          </video>
-          <a href="https://agile-but-safe.github.io/"><p>ABS</p> </a>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="fast" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/course/fast.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-h</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="mpc" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/course/mpc.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-b</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="slow" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/course/slow.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-l</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h3 class="title is-4">Experiment: S Blend Track</h3>
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="abs" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/s_blend/abs.mp4" type="video/mp4">
-          </video>
-          <a href="https://agile-but-safe.github.io/"><p>ABS</p> </a>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="fast" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/s_blend/fast.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-h</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="mpc" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/s_blend/mpc.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-b</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content has-text-centered">
-          <video id="slow" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/s_blend/slow.mp4" type="video/mp4">
-          </video>
-          <p>SEA-Nav-l</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- End image carousel -->
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
-  </section> -->
-<!--End paper poster -->
+  </section>
 
-
-<!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>
-        @inproceedings{
-          chen2024slr,
-          title={{SLR}: Learning Quadruped Locomotion without Privileged Information},
-          author={Shiyi Chen and Zeyu Wan and Shiyang Yan and Chun Zhang and Weiyi Zhang and Qiang Li and Debing Zhang and Fasih Ud Din Farrukh},
-          booktitle={8th Annual Conference on Robot Learning},
-          year={2024},
-          url={https://openreview.net/forum?id=RMkdcKK7jq}
-          }
-      </code></pre>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h3 class="title is-4">Experiment: Dynamic Obstacle</h3>
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="dynamic-fast" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/dynamic/fast.mp4" type="video/mp4">
+            </video>
+            <p>SEA-Nav</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="dynamic-mpc" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/dynamic/mpc.mp4" type="video/mp4">
+            </video>
+            <p>SEA-Nav-b</p>
+          </div>
+        </div>
+      </div>
     </div>
-</section> -->
-<!--End BibTex citation -->
+  </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h3 class="title is-4">Experiment: Obstacle Course</h3>
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="course-fast" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/course/fast.mp4" type="video/mp4">
+            </video>
+            <p>SEA-Nav</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="course-mpc" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/course/mpc.mp4" type="video/mp4">
+            </video>
+            <p>SEA-Nav-b</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h3 class="title is-4">Experiment: S Blend Track</h3>
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="sblend-fast" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/s_blend/fast.mp4" type="video/mp4">
+            </video>
+            <p>SEA-Nav</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content has-text-centered">
+            <video id="sblend-mpc" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/s_blend/mpc.mp4" type="video/mp4">
+            </video>
+            <p>SEA-Nav-b</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a>.
-          </p>
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>

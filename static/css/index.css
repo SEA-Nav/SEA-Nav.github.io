@@ -2,6 +2,47 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.hero .hero-body {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.section {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.title.is-1 {
+  margin-bottom: 1rem;
+}
+
+.title.is-3,
+.title.is-4 {
+  margin-bottom: 0.75rem;
+}
+
+.publication-links {
+  margin-top: 0.75rem;
+}
+
+.content p {
+  margin-bottom: 0.75rem;
+}
+
+.columns {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.columns .column {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.content.has-text-centered video {
+  border-radius: 8px;
+}
+
 
 .footer .icon-link {
     font-size: 25px;
@@ -20,7 +61,7 @@ body {
 
 .teaser .hero-body {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .teaser {
